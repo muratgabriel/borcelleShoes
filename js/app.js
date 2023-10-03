@@ -25,7 +25,7 @@ class BaseDeDatos {
 
     //Metodo traer productos te devuelve todos los productos q tengo en la base de datos (return)
     async traerRegistros() {
-        const response = await fetch('../json/shoes.json');
+        const response = await fetch('shoes.json');
         this.productos = await response.json();
         return this.productos;
     }
