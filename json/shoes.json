@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "nombre": "Nike Ben and Jerry",
+        "precio": 200,
+        "categoria": "Exclusivo",
+        "imagen": "NikeBenAndJerry.png"
+    },
+    {
+        "id": 2,
+        "nombre": "Nike Nyjah Huston",
+        "precio": 80,
+        "categoria": "Skateboarding",
+        "imagen": "NikeNhu.png"
+    },
+    {
+        "id": 3,
+        "nombre": "Nike Jordan Dior",
+        "precio": 500,
+        "categoria": "Exclusivo",
+        "imagen": "JordaDior.png"
+    },
+    {
+        "id": 4,
+        "nombre": "Adidas Forum",
+        "precio": 150,
+        "categoria": "Urban",
+        "imagen": "AdidasForum.png"
+    },
+    {
+        "id": 5,
+        "nombre": "Adidas Samba",
+        "precio": 130,
+        "categoria": "Urban",
+        "imagen": "AdidasSamba.png"
+    },
+    {
+        "id": 6,
+        "nombre": "Adidas Ozweego",
+        "precio": 160,
+        "categoria": "Urban",
+        "imagen": "AdidasOzwe.png"
+    },
+    {
+        "id": 7,
+        "nombre": "Vans Slip On",
+        "precio": 60,
+        "categoria": "Skateboarding",
+        "imagen": "VansSlipOn.png"
+    },
+    {
+        "id": 8,
+        "nombre": "Vans X Imran",
+        "precio": 200,
+        "categoria": "Urban",
+        "imagen": "VansImran.png"
+    },
+    {
+        "id": 9,
+        "nombre": "Vans Old Skool Flame",
+        "precio": 150,
+        "categoria": "Skateboarding",
+        "imagen": "VansOwhiteFlame.png"
+    }
+]

@@ -1,0 +1,33 @@
+footer {
+    background-color: #E8E2E2;
+    width: 100%;
+    height: 120px;
+
+
+    .footerContent {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+
+        .social {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        .localConctact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

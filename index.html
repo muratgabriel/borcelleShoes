@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a href="./index.html"><img class="logo" src="./assets/img/logo/borcelleLogo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./index.html">Shoes</a></li>
+                                <li><a class="dropdown-item" href="">Contacto</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form id="formBuscar" class="d-flex" role="search">
+                        <input class="form-control me-2" type="text" id="inputBuscar" value=""
+                            placeholder="Buscar marca" aria-label="Search">
+                        <button class="btn btn-outline-dark" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="botonCarrito"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom"><span
+                        id="cantidadProductos">0</span><img src="./assets/img/logo/carrito.png" alt=""></button></div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="mainIndex">
+            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
+                aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas-header">
+                    <h3>Total: $ <span id="totalCarrito">0</span></h3>
+                    <a href="#"><button id="btnComprar" class="btnCom">Comprar</button></a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body small">
+                    <div id="carrito">
+                        <!--Productos que esten en el carrito-->
+                    </div>
+                </div>
+            </div>
+            <div>
+
+                <ul id="categoria">
+                    <li><a href="#" id="btnTodas">Todas</a></li>
+                    <li><a href="#" class="btnCategoria">Exclusivo</a></li>
+                    <li><a href="#" class="btnCategoria">Urban</a></li>
+                    <li><a href="#" class="btnCategoria">Skateboarding</a></li>
+                </ul>
+            </div>
+            <div id="productos">
+                <!--Productos que traemos de la base de datos-->
+
+            </div>
+    </main>
+    <footer>
+        <div class="footerContent">
+            <div class="social">
+                <a href="https://www.instagram.com/"><img src="./assets/img/logo/instagramIcon.png"
+                        alt="logoInstagram"></a>
+                <a href="https://wa.link/gl4vdu"><img src="./assets/img/logo/whatsappIcon.png" alt="logoWhatsapp"></a>
+            </div>
+            <div class="localInfo">
+                <p>6290 Sherman Freeway, New Jersey</p>
+                <p>borcelleShoes@yahoo.com</p>
+                <p>Tel:(438) 936-7312</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

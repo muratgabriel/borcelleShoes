@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header .navbar {
+  background-color: #E8E2E2;
+  width: 100%;
+  height: 120px;
+}
+header .navbar a img {
+  width: 100px;
+  height: 100px;
+}
+header .navbar .logoCarrito {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+}
+header .botonCarrito {
+  margin: 10px;
+}
+header .botonCarrito span {
+  font-size: 15px;
+  background-color: red;
+  border-radius: 100px;
+}
+header .botonCarrito img {
+  width: 30px;
+  height: 30px;
+}
+
+body {
+  background-image: url("../assets/img/backgroundImg/nwBlancoNegro.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 100vh;
+  width: 100%;
+}
+
+.mainIndex #categoria {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  border: solid black;
+  margin: 25px;
+  border-radius: 10px;
+}
+.mainIndex #categoria li {
+  list-style: none;
+  background-color: #967E76;
+  margin: 10px;
+  border-radius: 10px;
+}
+.mainIndex #categoria li:hover {
+  background-color: #7A3E3E;
+  padding: 10px;
+}
+.mainIndex #categoria li a {
+  text-decoration: none;
+  color: black;
+}
+.mainIndex #productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  height: auto;
+  margin: 50px;
+}
+.mainIndex .productos {
+  background-color: #EEE3CB;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.mainIndex .productos img {
+  width: 150px;
+  height: 80px;
+}
+.mainIndex .productos p {
+  margin: 10 px;
+}
+.mainIndex .productos .btnAgregar {
+  background-color: #967E76;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 5px;
+  color: black;
+}
+.mainIndex .productos .btnAgregar:hover {
+  padding: 10px;
+  background-color: #7A3E3E;
+}
+.mainIndex #carrito {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.mainIndex #carrito .shoesEnCarrito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #EEE3CB;
+  border-radius: 10px;
+}
+.mainIndex #carrito h2 {
+  font-size: 18px;
+}
+.mainIndex #carrito img {
+  width: 50px;
+  height: 25px;
+}
+.mainIndex #carrito .btnQuitar {
+  background-color: #967E76;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+}
+.mainIndex #carrito .btnQuitar:hover {
+  padding: 5px;
+  background-color: #7A3E3E;
+}
+.mainIndex .offcanvas {
+  height: 400px;
+  background-image: url("../assets/img/backgroundImg/Eurobw.jpg");
+  background-position: center center;
+  background-size: auto;
+}
+.mainIndex .offcanvas .offcanvas-header h3 {
+  background-color: #EEE3CB;
+  border-radius: 10px;
+}
+.mainIndex .offcanvas .offcanvas-header .btnCom {
+  background-color: #7A3E3E;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+}
+.mainIndex .offcanvas .offcanvas-header .btnCom:hover {
+  padding: 30px;
+  background-color: red;
+}
+.mainIndex .offcanvas .offcanvas-header .oculto {
+  display: none;
+}
+.mainIndex .offcanvas .offcanvas-body::-webkit-scrollbar {
+  width: 25px;
+  background-color: #7A3E3E;
+  border-radius: 2px;
+}
+.mainIndex .offcanvas .offcanvas-body::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 4px;
+}
+.mainIndex .offcanvas .offcanvas-body::-webkit-scrollbar-thumb:hover {
+  background-color: red;
+}
+
+.info {
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #E8E2E2;
+  width: 100%;
+  height: 120px;
+}
+footer .footerContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+footer .footerContent .social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+footer .footerContent .social img {
+  width: 50px;
+  height: 50px;
+}
+footer .footerContent .localConctact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 320px) {
+  .mainIndex #productos {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=style.scss.map */
